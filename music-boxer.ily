@@ -26,6 +26,7 @@
                           ifaces-entry))
      (set! ifaces-entry (uniq-list (sort ifaces-entry symbol<?)))
      (set! ifaces-entry (cons 'grob-interface ifaces-entry))
+     (set! meta-entry (assoc-set! meta-entry 'classes (list class)))
      (set! meta-entry (assoc-set! meta-entry 'name grob-name))
      (set! meta-entry (assoc-set! meta-entry 'interfaces
                         ifaces-entry))
